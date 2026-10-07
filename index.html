@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voxa AI | Voice agents that answer every call</title>
+  <meta name="description" content="Voxa AI designs, builds and runs AI voice agents for businesses: receptionists, appointment booking, phone ordering, lead qualification, support and outbound follow-up.">
+  <meta name="theme-color" content="#2236F5">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232236F5'/%3E%3Cg fill='%23fff'%3E%3Crect x='7' y='12' width='3' height='8' rx='1.5'/%3E%3Crect x='12.5' y='7' width='3' height='18' rx='1.5'/%3E%3Crect x='18' y='10' width='3' height='12' rx='1.5'/%3E%3Crect x='23.5' y='13.5' width='3' height='5' rx='1.5'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader__word">voxa</div>
+    <div class="loader__line"><span></span></div>
+    <div class="loader__count"><span class="loader__num">0</span>% connecting</div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" data-theme="dark">
+    <a href="#top" class="logo" aria-label="Voxa AI home">
+      <svg class="logo__mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="8" width="3.4" height="8" rx="1.7"/><rect x="7" y="2" width="3.4" height="20" rx="1.7"/><rect x="13" y="5.5" width="3.4" height="13" rx="1.7"/><rect x="19" y="9.5" width="3.4" height="5" rx="1.7"/></svg>
+      <span class="logo__word">voxa</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#agents">Agents</a>
+      <a href="#demo">Hear a call</a>
+      <a href="#process">How it works</a>
+      <a href="#industries">Industries</a>
+      <a href="#calculator">Cost calculator</a>
+    </nav>
+    <a href="#contact" class="btn btn--nav" data-magnetic>Book a call</a>
+    <button class="nav__menu" type="button" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span class="sr">Menu</span></button>
+  </header>
+
+  <div class="menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#agents">Agents</a>
+      <a href="#demo">Hear a call</a>
+      <a href="#never-busy">Never busy</a>
+      <a href="#process">How it works</a>
+      <a href="#industries">Industries</a>
+      <a href="#calculator">Cost calculator</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contact" class="btn btn--orange btn--big">Book a strategy call</a>
+  </div>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top" data-nav="dark">
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__status"><span class="dot"></span> Agents on the line now</div>
+      <div class="hero__inner">
+        <h1 class="hero__title" aria-label="Every call, answered.">
+          <span class="hero__row" aria-hidden="true">Every call,</span>
+          <span class="hero__row" aria-hidden="true">answered.</span>
+        </h1>
+        <div class="hero__side">
+          <p class="hero__lede">Voxa AI builds and runs voice agents for your business. They pick up on the first ring, handle every caller at once, book appointments, take orders and chase leads, day and night, in a voice that sounds like you.</p>
+          <div class="hero__ctas">
+            <a href="#demo" class="btn btn--light" data-magnetic data-cursor="Listen">Hear a live call</a>
+            <a href="#contact" class="btn btn--ghost" data-magnetic>Book a strategy call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement" data-nav="light">
+      <p class="statement__text" data-scrub>Most businesses miss more calls than they think. Each one is a booking, an order or a lead that dials the next name on the list. Voxa agents pick up at 2 a.m., on your busiest Saturday and in the middle of a lunch rush, and they never put anyone on hold.</p>
+    </section>
+
+    <!-- AGENTS (services) -->
+    <section class="agents" id="agents" data-nav="light">
+      <div class="agents__pin">
+        <div class="agents__head">
+          <h2 class="h2" data-reveal>Eight agents.<br>One phone line.</h2>
+          <p class="agents__intro">Start with the calls that cost you most. Each agent is trained on your business, connected to your tools, logs every caller to your spreadsheet and hands off to your team when a human is needed.</p>
+        </div>
+        <div class="agents__track">
+
+          <article class="agent">
+            <h3 class="agent__name">AI receptionist</h3>
+            <p class="agent__does">Answers every call, handles the questions your front desk hears fifty times a day, routes urgent calls to the right person and takes clean messages.</p>
+            <div class="agent__call">
+              <p class="say say--caller">Are you open on Sunday?</p>
+              <p class="say say--agent">We are, from ten to four. Want me to save you a spot?</p>
+              <span class="agent__result">Message sent to front desk</span>
+            </div>
+            <p class="agent__tools">Works with your phone system, Slack, email and SMS</p>
+          </article>
+
+          <article class="agent">
+            <h3 class="agent__name">Appointment booking</h3>
+            <p class="agent__does">Books, reschedules and cancels straight into your calendar, checks real availability and texts a confirmation before the caller hangs up.</p>
+            <div class="agent__call">
+              <p class="say say--caller">Can I move my cleaning to next week?</p>
+              <p class="say say--agent">Of course. I have Tuesday at 9:30 or Thursday at 4:30.</p>
+              <span class="agent__result">Rescheduled to Thursday, 4:30 pm</span>
+            </div>
+            <p class="agent__tools">Google Calendar, Outlook, Calendly, Cal.com, practice software</p>
+          </article>
+
+          <article class="agent">
+            <h3 class="agent__name">Phone ordering</h3>
+            <p class="agent__does">Knows your full menu or catalogue, handles modifiers and allergies, suggests add-ons, sends the order to your kitchen or POS and texts a payment link.</p>
+            <div class="agent__call">
+              <p class="say say--caller">Two large pepperoni, one with extra cheese.</p>
+              <p class="say say--agent">Got it. Add garlic knots for four dollars?</p>
+              <span class="agent__result">Order #2041 sent to kitchen</span>
+            </div>
+            <p class="agent__tools">Square, Toast, Clover, Shopify, Stripe</p>
+          </article>
+
+          <article class="agent">
+            <h3 class="agent__name">Lead qualification</h3>
+            <p class="agent__does">Calls every new web lead within a minute, asks your qualifying questions, books the good ones onto your sales calendar and logs everything in your CRM.</p>
+            <div class="agent__call">
+              <p class="say say--agent">You asked about the house on Elm. Are you pre-approved?</p>
+              <p class="say say--caller">We are, and we'd like to see it this week.</p>
+              <span class="agent__result">Qualified and synced to CRM</span>
+            </div>
+            <p class="agent__tools">HubSpot, Salesforce, GoHighLevel, Pipedrive, Zapier</p>
+          </article>
+
+          <article class="agent">
+            <h3 class="agent__name">Customer support</h3>
+            <p class="agent__does">Answers order status, returns, billing and first-line troubleshooting. Anything it can't solve goes to your team with a full summary attached.</p>
+            <div class="agent__call">
+              <p class="say say--caller">My order hasn't arrived yet.</p>
+              <p class="say say--agent">It's with the courier and arrives tomorrow before noon.</p>
+              <span class="agent__result">Tracking link sent by SMS</span>
+            </div>
+            <p class="agent__tools">Shopify, Zendesk, Gorgias, Intercom, Freshdesk</p>
+          </article>
+
+          <article class="agent">
+            <h3 class="agent__name">Reminders and confirmations</h3>
+            <p class="agent__does">Outbound calls that confirm tomorrow's appointments, rebook no-shows on the spot and remind customers about renewals or unpaid invoices.</p>
+            <div class="agent__call">
+              <p class="say say--agent">Just confirming your visit tomorrow at ten.</p>
+              <p class="say say--caller">Can we make it eleven instead?</p>
+              <span class="agent__result">Moved to 11:00 am, slot reopened</span>
+            </div>
+            <p class="agent__tools">Your calendar, CRM or a simple spreadsheet</p>
+          </article>
+
+          <article class="agent">
+            <h3 class="agent__name">Win-back campaigns</h3>
+            <p class="agent__does">Calls past customers and cold leads with a reason to come back, collects reviews from happy ones and flags unhappy ones before they post.</p>
+            <div class="agent__call">
+              <p class="say say--agent">It's been six months since your last service. Want a slot this month?</p>
+              <p class="say say--caller">Actually, yes. Friday morning?</p>
+              <span class="agent__result">Customer reactivated, Friday 9:00 am</span>
+            </div>
+            <p class="agent__tools">CSV lists, CRM segments, review platforms</p>
+          </article>
+
+          <article class="agent">
+            <h3 class="agent__name">Intake and dispatch</h3>
+            <p class="agent__does">Collects the details your team needs before a callback: symptoms, case facts, job address, insurance. Emergencies get the on-call person paged immediately.</p>
+            <div class="agent__call">
+              <p class="say say--caller">The furnace stopped and we have a baby at home.</p>
+              <p class="say say--agent">That's a priority. I'm paging our on-call technician now.</p>
+              <span class="agent__result">On-call tech paged</span>
+            </div>
+            <p class="agent__tools">ServiceTitan, Jobber, Clio, EHR systems, PagerDuty</p>
+          </article>
+
+        </div>
+      </div>
+      <p class="agents__more">We also build reservation lines, surveys and feedback calls, payment reminders, event RSVPs, multilingual hotlines and overflow cover for busy call centres.</p>
+    </section>
+
+    <!-- DEMO -->
+    <section class="demo" id="demo" data-nav="dark">
+      <div class="demo__head">
+        <h2 class="h2" data-reveal>Hear an agent at work.</h2>
+        <p class="demo__intro">Pick a business and press play. Turn your sound on: this is the same kind of call your customers would have, with every action the agent takes logged on the right.</p>
+      </div>
+
+      <div class="console">
+        <div class="console__pick" aria-label="Choose a business">
+          <!-- filled by main.js -->
+        </div>
+
+        <div class="console__call">
+          <div class="console__bar">
+            <div>
+              <p class="console__biz">Brightside Dental</p>
+              <p class="console__kind">Incoming call</p>
+            </div>
+            <p class="console__timer" aria-live="off">00:00</p>
+          </div>
+          <canvas class="console__wave" aria-hidden="true"></canvas>
+          <div class="console__transcript" aria-live="polite">
+            <p class="console__empty">Press play to start the call.</p>
+          </div>
+          <div class="console__controls">
+            <button class="btn btn--light console__play" type="button" data-magnetic>Play call</button>
+            <label class="toggle">
+              <input type="checkbox" class="console__sound" checked>
+              <span class="toggle__track"><span></span></span>
+              Voice
+            </label>
+          </div>
+        </div>
+
+        <div class="console__log">
+          <div class="rec" aria-live="polite">
+            <div class="rec__top">
+              <p class="rec__title">Caller record</p>
+              <span class="rec__status" data-state="idle">Waiting for a call</span>
+            </div>
+            <div class="rec__who">
+              <span class="rec__avatar" aria-hidden="true">?</span>
+              <div>
+                <p class="rec__name">Unknown caller</p>
+                <p class="rec__phone">No number yet</p>
+              </div>
+            </div>
+            <dl class="rec__fields">
+              <div><dt>Email</dt><dd data-f="email"></dd></div>
+              <div><dt>Reason</dt><dd data-f="reason"></dd></div>
+              <div><dt>Outcome</dt><dd data-f="outcome"></dd></div>
+              <div><dt>Notes</dt><dd data-f="notes"></dd></div>
+            </dl>
+          </div>
+          <p class="console__logtitle">What the agent did</p>
+          <ol class="console__actions"></ol>
+        </div>
+      </div>
+
+      <div class="sheet">
+        <div class="sheet__bar">
+          <div class="sheet__file">
+            <svg class="sheet__icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8"/><path d="M9 11h14M9 16h14M9 21h14M15 7v18" /></svg>
+            <div>
+              <h3 class="sheet__title">Voxa call log</h3>
+              <p class="sheet__sub">Every caller saved to your Google Sheet or Excel file while the call is still going. Play a few calls and watch it grow.</p>
+            </div>
+          </div>
+          <div class="sheet__right">
+            <span class="sheet__count">0 calls logged</span>
+            <button class="btn btn--orange sheet__dl" type="button" disabled data-magnetic>Download for Excel (.csv)</button>
+          </div>
+        </div>
+        <div class="sheet__scroll" tabindex="0" role="region" aria-label="Call log">
+          <table class="sheet__table">
+            <thead>
+              <tr><th>Time</th><th>Caller</th><th>Business</th><th>Email</th><th>Reason for call</th><th>Outcome</th><th>Notes</th></tr>
+            </thead>
+            <tbody>
+              <tr class="sheet__empty"><td colspan="7">No calls yet. Press play above and the first row writes itself.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACTS -->
+    <section class="facts" data-nav="light">
+      <dl class="facts__grid">
+        <div class="fact"><dt>ring, every time</dt><dd><span data-count="1">1</span>st</dd></div>
+        <div class="fact"><dt>nights, weekends and holidays</dt><dd>24/7</dd></div>
+        <div class="fact"><dt>calls at once, never a busy tone</dt><dd>∞</dd></div>
+        <div class="fact"><dt>languages, switched mid-call</dt><dd><span data-count="30">30</span>+</dd></div>
+        <div class="fact"><dt>days from kickoff to live</dt><dd><span data-count="10">10</span></dd></div>
+      </dl>
+    </section>
+
+    <!-- NEVER BUSY -->
+    <section class="busy" id="never-busy" data-nav="dark">
+      <div class="busy__pin">
+        <div class="busy__copy">
+          <h2 class="h2" data-reveal>One call or fifty. Nobody hears a busy tone.</h2>
+          <p class="busy__lede">A front desk answers one call at a time. Everyone else gets a busy signal or a voicemail beep. Voxa answers every caller at the same moment, so a Monday-morning rush sounds exactly like a quiet Tuesday.</p>
+          <div class="busy__meter">
+            <span class="busy__count">0</span>
+            <span class="busy__unit">callers answered at the same time</span>
+          </div>
+          <div class="busy__compare">
+            <p><span class="busy__key busy__key--desk"></span>A front desk: 1 answered, the rest wait</p>
+            <p><span class="busy__key busy__key--voxa"></span>Voxa: every line picked up</p>
+          </div>
+        </div>
+        <div class="busy__board" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process" data-nav="light">
+      <div class="process__side">
+        <h2 class="h2" data-reveal>From first call to live line in about ten days.</h2>
+        <p class="process__intro">You keep running your business. We do the building, testing and tuning, and you approve every flow before a customer hears it.</p>
+        <div class="days" aria-hidden="true">
+          <p class="days__label">Day <span class="days__n">1</span><span class="days__of">of 10</span></p>
+          <div class="days__strip"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <p class="days__now">Mapping your calls</p>
+        </div>
+      </div>
+      <div class="steps-wrap">
+      <span class="steps__head" aria-hidden="true"></span>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__n">1</span>
+          <div>
+            <p class="step__when">Days 1 to 2</p>
+            <h3 class="step__title">Map your calls</h3>
+            <p>We listen to your recordings or sit with your front desk, list the top reasons people call and decide what the agent handles alone and what goes to a person.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__n">2</span>
+          <div>
+            <p class="step__when">Days 3 to 6</p>
+            <h3 class="step__title">Build the agent</h3>
+            <p>We write the conversation flows, load your prices, policies and hours, pick or clone the voice, and connect your calendar, CRM or POS.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__n">3</span>
+          <div>
+            <p class="step__when">Days 7 to 9</p>
+            <h3 class="step__title">Try to break it</h3>
+            <p>We call it hundreds of times with accents, background noise, interruptions and awkward questions, then fix what we find. You get a test line to try it yourself.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__n">4</span>
+          <div>
+            <p class="step__when">Day 10 onward</p>
+            <h3 class="step__title">Go live and keep tuning</h3>
+            <p>Forward your number or get a new one. Every week we review transcripts, tighten answers and send you a short report on calls handled, bookings made and revenue saved.</p>
+          </div>
+        </li>
+      </ol>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section class="industries" id="industries" data-nav="dark">
+      <h2 class="h2" data-reveal>Built for businesses that live on the phone.</h2>
+      <ul class="ind">
+        <li class="ind__row" tabindex="0"><span class="ind__name">Dental and medical clinics</span><span class="ind__what">Booking, reminders, insurance intake, after-hours triage</span></li>
+        <li class="ind__row" tabindex="0"><span class="ind__name">Restaurants and takeaway</span><span class="ind__what">Phone orders, reservations, catering enquiries, allergy questions</span></li>
+        <li class="ind__row" tabindex="0"><span class="ind__name">Home services</span><span class="ind__what">Emergency dispatch, quotes, job booking for HVAC, plumbing and electrical</span></li>
+        <li class="ind__row" tabindex="0"><span class="ind__name">Real estate</span><span class="ind__what">Instant lead callbacks, buyer qualification, showing bookings</span></li>
+        <li class="ind__row" tabindex="0"><span class="ind__name">Salons, spas and gyms</span><span class="ind__what">Bookings, rebooking, memberships, no-show recovery</span></li>
+        <li class="ind__row" tabindex="0"><span class="ind__name">Law firms</span><span class="ind__what">New client intake, conflict questions, consultation booking</span></li>
+        <li class="ind__row" tabindex="0"><span class="ind__name">Auto dealers and repair</span><span class="ind__what">Service booking, test drives, part and status updates</span></li>
+        <li class="ind__row" tabindex="0"><span class="ind__name">Hotels and rentals</span><span class="ind__what">Reservations, check-in questions, concierge requests</span></li>
+        <li class="ind__row" tabindex="0"><span class="ind__name">Online stores</span><span class="ind__what">Order status, returns, product questions, abandoned-cart calls</span></li>
+      </ul>
+    </section>
+
+    <!-- INTEGRATIONS -->
+    <section class="integrations" data-nav="light">
+      <p class="integrations__lead">Connects to the tools you already use</p>
+      <div class="marquee" aria-label="Integrations: Google Sheets, Excel, Google Calendar, Outlook, Calendly, HubSpot, Salesforce, GoHighLevel, Square, Toast, Shopify, Stripe, Zapier, Twilio, ServiceTitan, Zendesk">
+        <div class="marquee__track" aria-hidden="true">
+          <span>Google Sheets</span><span>Excel</span><span>Google Calendar</span><span>Outlook</span><span>Calendly</span><span>HubSpot</span><span>Salesforce</span><span>GoHighLevel</span><span>Square</span><span>Toast</span><span>Shopify</span><span>Stripe</span><span>Zapier</span><span>Twilio</span><span>ServiceTitan</span><span>Zendesk</span>
+          <span>Google Sheets</span><span>Excel</span><span>Google Calendar</span><span>Outlook</span><span>Calendly</span><span>HubSpot</span><span>Salesforce</span><span>GoHighLevel</span><span>Square</span><span>Toast</span><span>Shopify</span><span>Stripe</span><span>Zapier</span><span>Twilio</span><span>ServiceTitan</span><span>Zendesk</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section class="calc" id="calculator" data-nav="light">
+      <div class="calc__head">
+        <h2 class="h2" data-reveal>What are missed calls costing you?</h2>
+        <p>Move the sliders to match your business. It's a rough estimate, and most owners are surprised by it.</p>
+      </div>
+      <div class="calc__body">
+        <form class="calc__inputs" onsubmit="return false">
+          <label class="range">
+            <span class="range__top"><span>Calls you get a day</span><output data-for="calls">40</output></span>
+            <input type="range" name="calls" min="5" max="300" step="5" value="40">
+          </label>
+          <label class="range">
+            <span class="range__top"><span>Calls that go unanswered</span><output data-for="miss">25%</output></span>
+            <input type="range" name="miss" min="5" max="70" step="5" value="25">
+          </label>
+          <label class="range">
+            <span class="range__top"><span>Missed callers who would have bought</span><output data-for="book">30%</output></span>
+            <input type="range" name="book" min="10" max="80" step="5" value="30">
+          </label>
+          <label class="range">
+            <span class="range__top"><span>What a new customer is worth</span><output data-for="value">$250</output></span>
+            <input type="range" name="value" min="25" max="5000" step="25" value="250">
+          </label>
+        </form>
+        <div class="calc__result">
+          <p class="calc__label">Revenue you could be losing each month</p>
+          <p class="calc__big" aria-live="polite">$0</p>
+          <dl class="calc__facts">
+            <div><dt>Missed calls a month</dt><dd data-out="missed">0</dd></div>
+            <div><dt>Customers lost a month</dt><dd data-out="lost">0</dd></div>
+            <div><dt>Lost over a year</dt><dd data-out="year">$0</dd></div>
+          </dl>
+          <a href="#contact" class="btn btn--light" data-magnetic>Get these calls answered</a>
+          <p class="calc__note">Assumes 30 days a month. A Voxa agent picks up every one of these calls.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" data-nav="light">
+      <h2 class="h2" data-reveal>Questions owners ask us.</h2>
+      <div class="faq__list">
+        <details name="faq">
+          <summary>How much does it cost?</summary>
+          <p>Every agent is scoped to your call volume and what it needs to handle, so we quote after a 20-minute call. You pay a one-time setup and a flat monthly fee, with no long contract.</p>
+        </details>
+        <details name="faq">
+          <summary>Will callers know they're talking to AI?</summary>
+          <p>Only if you want them to. Most clients have the agent introduce itself as a virtual assistant. Either way, it speaks naturally, handles interruptions and doesn't read from a menu.</p>
+        </details>
+        <details name="faq">
+          <summary>What happens when lots of people call at once?</summary>
+          <p>Every caller gets answered straight away. Each call runs on its own line, so ten or fifty people calling together all hear a friendly voice on the first ring instead of a busy tone or a hold queue.</p>
+        </details>
+        <details name="faq">
+          <summary>Where do the caller's details end up?</summary>
+          <p>Wherever you work. Name, number, email, reason for calling, outcome and notes go into a Google Sheet or Excel file in real time, and into your CRM if you have one. Each row links to the recording and full transcript.</p>
+        </details>
+        <details name="faq">
+          <summary>Can it hand a call to a real person?</summary>
+          <p>Yes. You decide the rules: by topic, by caller, by time of day or whenever someone asks. The call transfers live, and your team gets a summary so nobody has to repeat themselves.</p>
+        </details>
+        <details name="faq">
+          <summary>What happens when it doesn't know the answer?</summary>
+          <p>It says so, takes a detailed message and sends it to the right person. It never makes up prices or policies, and we review those calls every week to close the gap.</p>
+        </details>
+        <details name="faq">
+          <summary>Do I need a new phone number?</summary>
+          <p>No. Keep your number and forward calls to the agent, all the time or only after hours and when you're busy. We can also set up new local or toll-free numbers.</p>
+        </details>
+        <details name="faq">
+          <summary>Which languages does it speak?</summary>
+          <p>More than 30, including Spanish, French, German, Hindi, Arabic and Mandarin. One agent can switch language mid-call when the caller does.</p>
+        </details>
+        <details name="faq">
+          <summary>What about privacy and call data?</summary>
+          <p>Calls and transcripts are encrypted and stored only as long as you choose. For healthcare and legal clients we build workflows that follow your compliance requirements.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact" data-nav="dark">
+      <canvas class="cta__canvas" aria-hidden="true"></canvas>
+      <div class="cta__inner">
+        <h2 class="cta__title" data-reveal>Let Voxa pick up.</h2>
+        <p class="cta__lede">Book a 20-minute call. We'll look at how your phones are answered today and show you what an agent would handle in week one.</p>
+        <div class="cta__actions">
+          <a href="mailto:Shivanshvwork@gmail.com?subject=Strategy%20call%20with%20Voxa%20AI" class="btn btn--light btn--big" data-magnetic data-cursor="Write">Book a strategy call</a>
+          <a href="tel:+919867203433" class="cta__phone">or call us: +91 98672 03433</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" data-nav="dark">
+    <div class="footer__cols">
+      <div>
+        <p class="footer__h">Agents</p>
+        <a href="#agents">Receptionist</a><a href="#agents">Booking</a><a href="#agents">Phone ordering</a><a href="#agents">Lead qualification</a>
+      </div>
+      <div>
+        <p class="footer__h">Company</p>
+        <a href="#process">How it works</a><a href="#calculator">Cost calculator</a><a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <p class="footer__h">Contact</p>
+        <a href="mailto:Shivanshvwork@gmail.com">Shivanshvwork@gmail.com</a><a href="tel:+919867203433">+91 98672 03433</a><a href="#contact">Book a call</a>
+      </div>
+    </div>
+    <p class="footer__word" aria-hidden="true">voxa</p>
+    <div class="footer__base">
+      <span>© <span class="year"></span> Voxa AI</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="scenes.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
