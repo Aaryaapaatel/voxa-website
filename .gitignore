@@ -1,2 +1,10 @@
 .DS_Store
 __pycache__/
+# secrets: never commit these
+.env
+.env.*
+*.pem
+*.key
+*.p12
+secrets/
+credentials*.json

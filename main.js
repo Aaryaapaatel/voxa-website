@@ -430,6 +430,7 @@
     } else calcBig.textContent = money(revenue);
   }
   calcForm.addEventListener('input', calc);
+  calcForm.addEventListener('submit', e => e.preventDefault());
   calc();
 
   /* ---------- pause looping CSS animations while their section is off-screen ---------- */
