@@ -141,7 +141,7 @@ canvas { display: block; }
    and it fades itself out after 6 s in case a script fails to load. */
 .loader { animation: loaderFailsafe .4s 6s forwards; }
 @keyframes loaderFailsafe { to { opacity: 0; visibility: hidden; } }
-@media (prefers-reduced-motion: reduce) { .loader { display: none; } }
+@media (prefers-reduced-motion: reduce), (hover: none), (pointer: coarse) { .loader { display: none; } } /* phones skip the intro screen (matches finePointer in main.js) */
 
 /* ---------- cursor ---------- */
 .cursor {

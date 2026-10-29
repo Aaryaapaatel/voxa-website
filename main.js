@@ -597,7 +597,7 @@
 
     let seen = false;
     try { seen = sessionStorage.getItem('voxa-intro') === '1'; sessionStorage.setItem('voxa-intro', '1'); } catch {}
-    if (reduced || seen) { // repeat visit in this tab: no loading screen
+    if (reduced || seen || !finePointer) { // phones/tablets and repeat visits: straight to the hero
       loader.remove();
       if (!reduced) intro.play();
     } else {
