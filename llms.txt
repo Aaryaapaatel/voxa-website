@@ -1,0 +1,28 @@
+# Voxa AI
+
+> Voxa AI designs, builds and runs AI voice agents for businesses. The agents answer every call on the first ring, 24/7, handle many callers at once, book appointments, take phone orders, qualify leads and follow up with customers, and log every caller's details to Google Sheets, Excel or a CRM. Most agents go live in about 10 days.
+
+Voxa AI works with clinics, restaurants, home services, real estate, salons and gyms, law firms, auto dealers, hotels and online stores. Pricing is a one-time setup plus a flat monthly fee, quoted after a 20-minute call.
+
+## Services
+
+- [AI receptionist](https://voxa.in/#agents): answers every call, handles common questions, routes urgent calls and takes messages
+- [Appointment booking](https://voxa.in/#agents): books, reschedules and cancels in the business calendar and texts a confirmation
+- [Phone ordering](https://voxa.in/#agents): takes orders with modifiers and add-ons and sends them to the kitchen or POS
+- [Lead qualification](https://voxa.in/#agents): calls new leads within a minute, qualifies them and books sales calls
+- [Customer support](https://voxa.in/#agents): order status, returns, billing and first-line troubleshooting
+- [Reminders and confirmations](https://voxa.in/#agents): outbound calls that confirm appointments and recover no-shows
+- [Win-back campaigns](https://voxa.in/#agents): calls past customers and collects reviews
+- [Intake and dispatch](https://voxa.in/#agents): collects caller details and pages on-call staff for emergencies
+
+## Learn more
+
+- [Hear a demo call](https://voxa.in/#demo): five sample calls with a live caller record and call log
+- [How it works](https://voxa.in/#process): from first call to a live line in about ten days
+- [Missed-call cost calculator](https://voxa.in/#calculator)
+- [FAQ](https://voxa.in/#faq)
+
+## Contact
+
+- Email: Shivanshvwork@gmail.com
+- Phone: +91 98672 03433

@@ -595,8 +595,11 @@
     if (chars.length && !reduced) intro.from(chars, { yPercent: 115, duration: 1.2, ease: 'expo.out', stagger: 0.025 });
     intro.from('.hero__side > *, .hero__status', { opacity: 0, y: 24, duration: 0.9, ease: 'power3.out', stagger: 0.1 }, '-=0.9');
 
-    if (reduced) {
+    let seen = false;
+    try { seen = sessionStorage.getItem('voxa-intro') === '1'; sessionStorage.setItem('voxa-intro', '1'); } catch {}
+    if (reduced || seen) { // repeat visit in this tab: no loading screen
       loader.remove();
+      if (!reduced) intro.play();
     } else {
       document.body.classList.add('is-loading');
       lenis?.stop();
@@ -604,9 +607,9 @@
       gsap.timeline({
         onComplete: () => { loader.remove(); document.body.classList.remove('is-loading'); lenis?.start(); },
       })
-        .to(count, { v: 100, duration: 1.3, ease: 'power2.inOut', onUpdate: () => { $('.loader__num').textContent = Math.round(count.v); } })
-        .to('.loader__line span', { scaleX: 1, duration: 1.3, ease: 'power2.inOut' }, 0)
-        .fromTo('.loader__word', { '--w': 62 }, { '--w': 125, duration: 1.3, ease: 'power2.inOut' }, 0)
+        .to(count, { v: 100, duration: 1, ease: 'power2.inOut', onUpdate: () => { $('.loader__num').textContent = Math.round(count.v); } })
+        .to('.loader__line span', { scaleX: 1, duration: 1, ease: 'power2.inOut' }, 0)
+        .fromTo('.loader__word', { '--w': 62 }, { '--w': 125, duration: 1, ease: 'power2.inOut' }, 0)
         .to('.loader__word, .loader__line, .loader__count', { opacity: 0, y: -20, duration: 0.4, ease: 'power2.in' }, '+=0.1')
         .to(loader, { clipPath: 'inset(0 0 100% 0)', duration: 0.9, ease: 'expo.inOut' })
         .add(() => intro.play(), '-=0.45');
@@ -664,7 +667,7 @@
       }));
 
       /* statement fills in word by word as you scroll */
-      const st = SplitText.create('[data-scrub]', { type: 'words', wordsClass: 'word' });
+      const st = SplitText.create('[data-scrub]', { type: 'words', wordsClass: 'word', aria: 'none' }); // words stay plain text for screen readers
       gsap.to(st.words, {
         opacity: 1, stagger: 0.1, ease: 'none',
         scrollTrigger: { trigger: '.statement', start: 'top 70%', end: 'bottom 60%', scrub: true },

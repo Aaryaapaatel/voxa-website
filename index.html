@@ -3,17 +3,215 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- GitHub Pages can't send custom headers, so the CSP is set here. Only our own files, the two CDNs and Google Fonts may load. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <!-- GitHub Pages can't send custom headers, so the CSP is set here. Only our own files and the two script CDNs may load. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Voxa AI | Voice agents that answer every call</title>
-  <meta name="description" content="Voxa AI designs, builds and runs AI voice agents for businesses: receptionists, appointment booking, phone ordering, lead qualification, support and outbound follow-up.">
+  <title>Voxa AI | AI Voice Agents &amp; AI Receptionist for Businesses</title>
+  <meta name="description" content="AI voice agents that answer every call 24/7: AI receptionist, appointment booking, phone orders, lead follow-up and support. Live in about 10 days.">
+  <link rel="canonical" href="https://voxa.in/">
   <meta name="theme-color" content="#2236F5">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Voxa AI">
+  <meta property="og:url" content="https://voxa.in/">
+  <meta property="og:title" content="Voxa AI | AI voice agents that answer every call">
+  <meta property="og:description" content="AI receptionists, booking, phone ordering and lead follow-up that pick up on the first ring, 24/7. Hear a live call on the site.">
+  <meta property="og:image" content="https://voxa.in/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Voxa AI: Every call, answered. AI voice agents for businesses.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232236F5'/%3E%3Cg fill='%23fff'%3E%3Crect x='7' y='12' width='3' height='8' rx='1.5'/%3E%3Crect x='12.5' y='7' width='3' height='18' rx='1.5'/%3E%3Crect x='18' y='10' width='3' height='12' rx='1.5'/%3E%3Crect x='23.5' y='13.5' width='3' height='5' rx='1.5'/%3E%3C/g%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/archivo-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://voxa.in/#org",
+   "name": "Voxa AI",
+   "url": "https://voxa.in/",
+   "logo": "https://voxa.in/icon-512.png",
+   "email": "Shivanshvwork@gmail.com",
+   "telephone": "+91-98672-03433",
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "telephone": "+91-98672-03433",
+    "email": "Shivanshvwork@gmail.com",
+    "availableLanguage": [
+     "English",
+     "Hindi"
+    ]
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://voxa.in/#website",
+   "url": "https://voxa.in/",
+   "name": "Voxa AI",
+   "publisher": {
+    "@id": "https://voxa.in/#org"
+   },
+   "inLanguage": "en"
+  },
+  {
+   "@type": "Service",
+   "@id": "https://voxa.in/#service",
+   "serviceType": "AI voice agents",
+   "name": "AI voice agents for businesses",
+   "provider": {
+    "@id": "https://voxa.in/#org"
+   },
+   "description": "Voxa AI designs, builds and runs AI voice agents that answer calls 24/7, book appointments, take phone orders, qualify leads and follow up with customers.",
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Voice agents",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "AI receptionist"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Appointment booking"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Phone ordering"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Lead qualification"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Customer support"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Reminders and confirmations"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Win-back campaigns"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Intake and dispatch"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://voxa.in/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How much does it cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Every agent is scoped to your call volume and what it needs to handle, so we quote after a 20-minute call. You pay a one-time setup and a flat monthly fee, with no long contract."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will callers know they're talking to AI?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only if you want them to. Most clients have the agent introduce itself as a virtual assistant. Either way, it speaks naturally, handles interruptions and doesn't read from a menu."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens when lots of people call at once?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Every caller gets answered straight away. Each call runs on its own line, so ten or fifty people calling together all hear a friendly voice on the first ring instead of a busy tone or a hold queue."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where do the caller's details end up?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Wherever you work. Name, number, email, reason for calling, outcome and notes go into a Google Sheet or Excel file in real time, and into your CRM if you have one. Each row links to the recording and full transcript."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can it hand a call to a real person?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. You decide the rules: by topic, by caller, by time of day or whenever someone asks. The call transfers live, and your team gets a summary so nobody has to repeat themselves."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens when it doesn't know the answer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It says so, takes a detailed message and sends it to the right person. It never makes up prices or policies, and we review those calls every week to close the gap."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a new phone number?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Keep your number and forward calls to the agent, all the time or only after hours and when you're busy. We can also set up new local or toll-free numbers."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which languages does it speak?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "More than 30, including Spanish, French, German, Hindi, Arabic and Mandarin. One agent can switch language mid-call when the caller does."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What about privacy and call data?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Calls and transcripts are encrypted and stored only as long as you choose. For healthcare and legal clients we build workflows that follow your compliance requirements."
+     }
+    }
+   ]
+  }
+ ]
+}
+  </script>
   <link rel="stylesheet" href="styles.css">
+  <noscript><link rel="stylesheet" href="noscript.css"></noscript>
 </head>
 <body>
 
@@ -369,7 +567,8 @@
     <!-- INTEGRATIONS -->
     <section class="integrations" data-nav="light">
       <p class="integrations__lead">Connects to the tools you already use</p>
-      <div class="marquee" aria-label="Integrations: Google Sheets, Excel, Google Calendar, Outlook, Calendly, HubSpot, Salesforce, GoHighLevel, Square, Toast, Shopify, Stripe, Zapier, Twilio, ServiceTitan, Zendesk">
+      <p class="sr">Integrations: Google Sheets, Excel, Google Calendar, Outlook, Calendly, HubSpot, Salesforce, GoHighLevel, Square, Toast, Shopify, Stripe, Zapier, Twilio, ServiceTitan, Zendesk</p>
+      <div class="marquee">
         <div class="marquee__track" aria-hidden="true">
           <span>Google Sheets</span><span>Excel</span><span>Google Calendar</span><span>Outlook</span><span>Calendly</span><span>HubSpot</span><span>Salesforce</span><span>GoHighLevel</span><span>Square</span><span>Toast</span><span>Shopify</span><span>Stripe</span><span>Zapier</span><span>Twilio</span><span>ServiceTitan</span><span>Zendesk</span>
           <span>Google Sheets</span><span>Excel</span><span>Google Calendar</span><span>Outlook</span><span>Calendly</span><span>HubSpot</span><span>Salesforce</span><span>GoHighLevel</span><span>Square</span><span>Toast</span><span>Shopify</span><span>Stripe</span><span>Zapier</span><span>Twilio</span><span>ServiceTitan</span><span>Zendesk</span>
@@ -495,11 +694,11 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" integrity="sha384-xb96EMJeax+NLXMC88ZBa1xAeAW+kn+horHh/zFlbMLG2UPWhMJJSlv7fi57hS+Q" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js" integrity="sha384-eD5ubmuCcvTdCADWuSchJYE7wcj2nzNr0itbrh6w/KJyBiltSZ8w3VFRBSWu5YQ8" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="scenes.js"></script>
-  <script src="main.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" integrity="sha384-xb96EMJeax+NLXMC88ZBa1xAeAW+kn+horHh/zFlbMLG2UPWhMJJSlv7fi57hS+Q" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js" integrity="sha384-eD5ubmuCcvTdCADWuSchJYE7wcj2nzNr0itbrh6w/KJyBiltSZ8w3VFRBSWu5YQ8" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="scenes.js"></script>
+  <script defer src="main.js"></script>
 </body>
 </html>

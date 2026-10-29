@@ -1,0 +1,6 @@
+# Everything on voxa.in is public. Search engines and AI assistants are welcome.
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+Sitemap: https://voxa.in/sitemap.xml
